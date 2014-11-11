@@ -952,8 +952,8 @@ class redhatDistro(AbstractDistro):
             return 1
         else:
             return 0
-	
-	def deleteRootPassword(self):
+
+    def deleteRootPassword(self):
         return Run("/usr/sbin/usermod -p '!!' root")
 
 
