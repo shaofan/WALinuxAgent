@@ -940,7 +940,7 @@ class redhatDistro(AbstractDistro):
     def unregisterAgentService(self):
         self.stopAgentService()
         return self.uninstallAgentService()
-    
+
     def checkPackageInstalled(self,p):
         if Run("yum list installed " + p,chk_err=False):
             return 0
